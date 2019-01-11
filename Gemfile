@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# If nokogiri fails, use `bundle config build.nokogiri --use-system-libraries`
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
@@ -54,7 +55,7 @@ group :development do
   gem 'meta_request'
 
   gem "overcommit", require: false
-  gem "rubocop", '~> 0.52.0', require: false
+  gem "rubocop", '~> 0.53', require: false
   gem "rubocop-rails", require: false
   gem "reek", require: false
   gem "rails_best_practices", require: false
